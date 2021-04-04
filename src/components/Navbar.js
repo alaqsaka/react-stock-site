@@ -1,11 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import Icon from "../assets/logo.svg";
+import { Link } from "react-router-dom";
+
+const NavbarContainer = styled.div``;
+const NavbarWrap = styled.div``;
+const Logo = styled.div``;
+const Nav = styled.div``;
+const NavLink = styled(Link)``;
+const Search = styled.div``;
+const SearchWrap = styled.div``;
+const Input = styled.input``;
+const ButtonContainer = styled.div``;
+const Button = styled.div``;
 
 const Navbar = () => {
   return (
-    <NavbarConainter>
+    <NavbarContainer>
       <NavbarWrap>
+        <Logo />
         <Nav>
           <NavLink to="/">HOME</NavLink>
           <NavLink to="/">MARKET</NavLink>
@@ -24,7 +37,7 @@ const Navbar = () => {
           <Button>LOG IN</Button>
         </ButtonContainer>
       </NavbarWrap>
-    </NavbarConainter>
+    </NavbarContainer>
   );
 };
 
